@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #E67E22; /* saffron orange for CTAs and brand power */
+  --color-primary-50: #FDF2E9; /* lightest saffron tint */
+  --color-primary-100: #FCE4CA; /* light saffron tint */
+  --color-primary-200: #F8C471; /* medium saffron tint */
+  --color-primary-300: #F5B041; /* darker saffron tint */
+  --color-primary-400: #F39C12; /* turmeric yellow transition */
+  --color-primary-500: #E67E22; /* base saffron orange */
+  --color-primary-600: #D35400; /* darker saffron */
+  --color-primary-700: #BA4A00; /* deep saffron */
+  --color-primary-800: #A04000; /* deepest saffron */
+  --color-primary-900: #873600; /* darkest saffron */
+
+  /* Secondary Colors */
+  --color-secondary: #F39C12; /* turmeric yellow for supporting hierarchy */
+  --color-secondary-50: #FEF9E7; /* lightest turmeric */
+  --color-secondary-100: #FCF3CF; /* light turmeric */
+  --color-secondary-200: #F9E79F; /* medium turmeric */
+  --color-secondary-300: #F7DC6F; /* darker turmeric */
+  --color-secondary-400: #F4D03F; /* deep turmeric */
+  --color-secondary-500: #F39C12; /* base turmeric yellow */
+  --color-secondary-600: #D68910; /* darker turmeric */
+  --color-secondary-700: #B7950B; /* deep turmeric */
+  --color-secondary-800: #9A7D0A; /* deepest turmeric */
+  --color-secondary-900: #7D6608; /* darkest turmeric */
+
+  /* Accent Colors */
+  --color-accent: #27AE60; /* cardamom green for conversion moments */
+  --color-accent-50: #E8F8F5; /* lightest cardamom */
+  --color-accent-100: #D1F2EB; /* light cardamom */
+  --color-accent-200: #A3E4D7; /* medium cardamom */
+  --color-accent-300: #76D7C4; /* darker cardamom */
+  --color-accent-400: #48C9B0; /* deep cardamom */
+  --color-accent-500: #27AE60; /* base cardamom green */
+  --color-accent-600: #229954; /* darker cardamom */
+  --color-accent-700: #1E8449; /* deep cardamom */
+  --color-accent-800: #196F3D; /* deepest cardamom */
+  --color-accent-900: #145A32; /* darkest cardamom */
+
+  /* Background Colors */
+  --color-background: #FFFFFF; /* clean canvas for content clarity */
+  --color-surface: #F8F9FA; /* section separation without borders */
+  --color-surface-50: #FAFBFC; /* lightest surface */
+  --color-surface-100: #F8F9FA; /* base surface */
+  --color-surface-200: #E9ECEF; /* medium surface */
+  --color-surface-300: #DEE2E6; /* darker surface */
+
+  /* Text Colors */
+  --color-text-primary: #2C3E50; /* high contrast for mobile scanning */
+  --color-text-secondary: #7F8C8D; /* supporting without distraction */
+  --color-text-light: #BDC3C7; /* light text for subtle elements */
+  --color-text-dark: #1C2833; /* darkest text for emphasis */
+
+  /* Status Colors */
+  --color-success: #27AE60; /* positive reinforcement for achievements */
+  --color-warning: #E74C3C; /* scarcity/urgency countdown timers */
+  --color-error: #E74C3C; /* form validation feedback only */
+  --color-info: #3498DB; /* informational elements */
+
+  /* Shadow Variables */
+  --shadow-cta: 0 4px 12px rgba(230, 126, 34, 0.15);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 6px 16px rgba(230, 126, 34, 0.2);
+
+  /* Border Variables */
+  --border-focus: 2px solid #E67E22;
+  --border-card: 1px solid #ECF0F1;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+
+  /* Animation Variables */
+  --transition-fast: 200ms ease-out;
+  --transition-normal: 250ms ease-out;
+  --transition-slow: 300ms ease-out;
+}
+
+/* Custom Component Classes */
+.btn-primary  {
+  @apply bg-primary text-white font-poppins font-semibold px-6 py-3 rounded-lg transition-all duration-250 hover:bg-primary-600 active:transform active:scale-95;
+}
+.btn-secondary  {
+  @apply bg-secondary text-white font-poppins font-semibold px-6 py-3 rounded-lg transition-all duration-250 hover:bg-secondary-600 active:transform active:scale-95;
+}
+.card  {
+  @apply bg-white rounded-lg shadow-card p-6 transition-all duration-250;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+}
+
+.section-padding {
+  @apply px-4 py-12 md:px-6 lg:px-8;
+}
+
+.container-max {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 300ms ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 400ms ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus States */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .section-padding {
+    @apply px-4 py-8;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    @apply w-full text-center;
+  }
+}

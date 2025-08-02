@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpiceQuest - Master Indian Cooking Through Play</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Transform complex Indian recipes into fun games. Learn authentic cooking through interactive challenges designed for Gen Z. Start your culinary journey today!" />
+    <meta property="og:title" content="SpiceQuest - Master Indian Cooking Through Play" />
+    <meta property="og:description" content="Interactive Indian cooking platform that makes traditional recipes accessible through gamified learning" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=2940&auto=format&fit=crop" />
+    <meta property="og:type" content="website" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fspicequest6682back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-inter">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-surface-200">
+        <div class="container-max section-padding py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                        <circle cx="16" cy="16" r="3" fill="white"/>
+                    </svg>
+                    <span class="text-2xl font-poppins font-bold text-primary">SpiceQuest</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-text-secondary hover:text-primary transition-colors">Features</a>
+                    <a href="#recipes" class="text-text-secondary hover:text-primary transition-colors">Recipes</a>
+                    <a href="#testimonials" class="text-text-secondary hover:text-primary transition-colors">Reviews</a>
+                    <a href="#pricing" class="text-text-secondary hover:text-primary transition-colors">Pricing</a>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex items-center space-x-4">
+                    <button class="hidden sm:block text-primary hover:text-primary-600 font-medium transition-colors">Sign In</button>
+                    <button class="btn-primary">Start Free</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
+        <!-- Background Image Carousel -->
+        <div class="absolute inset-0 z-0">
+            <div class="relative w-full h-full">
+                <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Colorful Indian spices and dishes" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+            </div>
+        </div>
+        
+        <!-- Animated Spice Particles -->
+        <div class="absolute inset-0 z-10">
+            <div class="animate-pulse-slow absolute top-20 left-10 w-2 h-2 bg-secondary rounded-full opacity-60"></div>
+            <div class="animate-pulse-slow absolute top-40 right-20 w-3 h-3 bg-primary rounded-full opacity-40" style="animation-delay: 1s;"></div>
+            <div class="animate-pulse-slow absolute bottom-40 left-20 w-2 h-2 bg-accent rounded-full opacity-50" style="animation-delay: 2s;"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 container-max section-padding">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-white mb-6 leading-tight">
+                    Master Indian Cooking 
+                    <span class="text-gradient bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">Through Play</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+                    Transform complex recipes into fun games - cook authentic Indian food in 7 days with our interactive learning platform designed for Gen Z.
+                </p>
+                
+                <!-- Dual CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <button class="btn-primary text-lg px-8 py-4 shadow-cta hover:shadow-cta-hover">
+                        🎮 Start Cooking Challenge
+                    </button>
+                    <button class="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-poppins font-semibold px-8 py-4 rounded-lg transition-all duration-250 hover:bg-white/30 hover:border-white/50">
+                        🎯 Play Ingredient Game
+                    </button>
+                </div>
+                
+                <!-- Trust Bar -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 text-white/90">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl font-poppins font-bold text-secondary">50,000+</span>
+                        <span class="text-sm">recipes mastered</span>
+                    </div>
+                    <div class="hidden sm:block w-px h-8 bg-white/30"></div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl font-poppins font-bold text-accent">95%</span>
+                        <span class="text-sm">cook first dish within 7 days</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Agitation Section -->
+    <section class="section-padding bg-surface-50">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Why Traditional Cookbooks Don't Work for Gen Z
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Complex ingredient lists, intimidating techniques, and zero engagement leave young cooks frustrated and ordering takeout instead.
+                </p>
+            </div>
+            
+            <!-- Split-screen Comparison -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Traditional Approach -->
+                <div class="card bg-gray-50 border-2 border-gray-200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                            📚
+                        </div>
+                        <h3 class="text-2xl font-poppins font-bold text-gray-600 mb-2">Traditional Cookbooks</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span>Overwhelming ingredient lists with no guidance</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span>Complex techniques with no visual learning</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span>No progress tracking or motivation</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 mt-1">❌</span>
+                            <span>Cultural context missing</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- SpiceQuest Approach -->
+                <div class="card bg-gradient-to-br from-primary-50 to-secondary-50 border-2 border-primary-200">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            🎮
+                        </div>
+                        <h3 class="text-2xl font-poppins font-bold text-primary mb-2">SpiceQuest Method</h3>
+                    </div>
+                    <ul class="space-y-3 text-text-primary">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✅</span>
+                            <span>Interactive ingredient matching games</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✅</span>
+                            <span>Step-by-step video tutorials with cultural stories</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✅</span>
+                            <span>Achievement badges and cooking streaks</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✅</span>
+                            <span>Authentic cultural context and heritage</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Statistics -->
+            <div class="mt-16 text-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card">
+                        <div class="text-4xl font-poppins font-bold text-warning mb-2">73%</div>
+                        <p class="text-text-secondary">of Gen Z find traditional recipes intimidating</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-4xl font-poppins font-bold text-warning mb-2">89%</div>
+                        <p class="text-text-secondary">prefer interactive learning over reading</p>
+                    </div>
+                    <div class="card">
+                        <div class="text-4xl font-poppins font-bold text-warning mb-2">65%</div>
+                        <p class="text-text-secondary">want to connect with their cultural heritage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Embedded Game Demo -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Try Our Ingredient Matching Game
+                </h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Experience how we make learning fun! Drag spices to their correct dishes and unlock recipe previews.
+                </p>
+            </div>
+            
+            <!-- Game Interface -->
+            <div class="max-w-4xl mx-auto">
+                <div class="card bg-white p-8">
+                    <div class="text-center mb-8">
+                        <div class="flex items-center justify-center space-x-4 mb-4">
+                            <span class="text-lg font-medium text-text-secondary">Score:</span>
+                            <span class="text-3xl font-poppins font-bold text-primary">150</span>
+                            <span class="text-lg font-medium text-text-secondary">Level:</span>
+                            <span class="text-3xl font-poppins font-bold text-accent">2</span>
+                        </div>
+                        <div class="w-full bg-surface-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Game Board -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Spices -->
+                        <div>
+                            <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Drag These Spices:</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-secondary-100 p-4 rounded-lg cursor-move hover:shadow-lg transition-all duration-250 border-2 border-dashed border-secondary-300">
+                                    <div class="text-center">
+                                        <div class="text-3xl mb-2">🌶️</div>
+                                        <span class="font-medium text-text-primary">Red Chili</span>
+                                    </div>
+                                </div>
+                                <div class="bg-secondary-100 p-4 rounded-lg cursor-move hover:shadow-lg transition-all duration-250 border-2 border-dashed border-secondary-300">
+                                    <div class="text-center">
+                                        <div class="text-3xl mb-2">🧄</div>
+                                        <span class="font-medium text-text-primary">Garlic</span>
+                                    </div>
+                                </div>
+                                <div class="bg-secondary-100 p-4 rounded-lg cursor-move hover:shadow-lg transition-all duration-250 border-2 border-dashed border-secondary-300">
+                                    <div class="text-center">
+                                        <div class="text-3xl mb-2">🫚</div>
+                                        <span class="font-medium text-text-primary">Ginger</span>
+                                    </div>
+                                </div>
+                                <div class="bg-secondary-100 p-4 rounded-lg cursor-move hover:shadow-lg transition-all duration-250 border-2 border-dashed border-secondary-300">
+                                    <div class="text-center">
+                                        <div class="text-3xl mb-2">🌿</div>
+                                        <span class="font-medium text-text-primary">Coriander</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Dishes -->
+                        <div>
+                            <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">To These Dishes:</h3>
+                            <div class="space-y-4">
+                                <div class="bg-accent-100 p-4 rounded-lg border-2 border-dashed border-accent-300 min-h-[80px] flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=400&auto=format&fit=crop" alt="Butter Chicken" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                                        <span class="font-medium text-text-primary">Butter Chicken</span>
+                                    </div>
+                                    <div class="text-accent text-sm">Drop here!</div>
+                                </div>
+                                <div class="bg-accent-100 p-4 rounded-lg border-2 border-dashed border-accent-300 min-h-[80px] flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <img src="https://images.unsplash.com/photo-1563379091339-03246963d51a?q=80&w=400&auto=format&fit=crop" alt="Biryani" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2019/01/29/18/05/biryani-3962048_960_720.jpg'; this.onerror=null;" />
+                                        <span class="font-medium text-text-primary">Biryani</span>
+                                    </div>
+                                    <div class="text-accent text-sm">Drop here!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <button class="btn-primary">
+                            🎯 Check My Matches
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Why SpiceQuest Works for Gen Z
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    We've reimagined cooking education with interactive features that match how young people actually learn and engage.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors">
+                        <span class="text-2xl">🎥</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Step-by-Step Video Tutorials</h3>
+                    <p class="text-text-secondary mb-4">Watch real chefs demonstrate techniques with cultural stories that make each recipe memorable and meaningful.</p>
+                    <div class="bg-surface-100 p-3 rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=400&auto=format&fit=crop" alt="Chef cooking tutorial" class="w-full h-32 object-cover rounded" onerror="this.src='https://images.pexels.com/photos/3338681/pexels-photo-3338681.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary-200 transition-colors">
+                        <span class="text-2xl">🎮</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Interactive Learning Games</h3>
+                    <p class="text-text-secondary mb-4">Master ingredients through matching games, spice identification challenges, and cooking technique quizzes.</p>
+                    <div class="flex space-x-2">
+                        <div class="bg-secondary-100 px-3 py-1 rounded-full text-sm text-secondary-700">Spice Match</div>
+                        <div class="bg-secondary-100 px-3 py-1 rounded-full text-sm text-secondary-700">Technique Quiz</div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-accent-200 transition-colors">
+                        <span class="text-2xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Achievement System</h3>
+                    <p class="text-text-secondary mb-4">Earn badges, maintain cooking streaks, and level up your skills with our comprehensive progression system.</p>
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white text-xs">🥇</div>
+                        <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white text-xs">🔥</div>
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">⭐</div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Mobile-First Design</h3>
+                    <p class="text-text-secondary mb-4">Cook with your phone in the kitchen. Offline access, voice commands, and progress photos make cooking seamless.</p>
+                    <div class="bg-surface-100 p-3 rounded-lg">
+                        <div class="bg-primary text-white p-2 rounded text-center text-sm">📸 Take Progress Photo</div>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary-200 transition-colors">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Cultural Stories</h3>
+                    <p class="text-text-secondary mb-4">Learn the history and significance behind each dish, connecting you to authentic Indian culinary heritage.</p>
+                    <div class="text-sm text-text-secondary italic">"Discover why turmeric is called 'golden spice' and its role in Indian traditions..."</div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="card group hover:scale-105 transition-all duration-350">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-accent-200 transition-colors">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-4">Social Community</h3>
+                    <p class="text-text-secondary mb-4">Share your cooking wins, join challenges, and get support from a community of young Indian food enthusiasts.</p>
+                    <div class="flex -space-x-2">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=100&auto=format&fit=crop" alt="User avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="User avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="User avatar" class="w-8 h-8 rounded-full border-2 border-white object-cover" onerror="this.src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <div class="w-8 h-8 rounded-full border-2 border-white bg-primary text-white text-xs flex items-center justify-center">+5k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Categories -->
+    <section id="recipes" class="section-padding bg-surface-50">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Popular Recipe Categories
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    From street food favorites to restaurant classics, master the dishes you love with our interactive approach.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Butter Chicken -->
+                <div class="card group hover:scale-105 transition-all duration-350 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&auto=format&fit=crop" alt="Butter Chicken" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-350" onerror="this.src='https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=600'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">Beginner</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white/90 text-text-primary px-3 py-1 rounded-full text-sm font-medium">45 min</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-2">Butter Chicken</h3>
+                    <p class="text-text-secondary mb-4">Creamy, rich, and perfectly spiced - learn the restaurant secret to this beloved dish.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex text-secondary">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-text-secondary">(2.4k completed)</span>
+                        </div>
+                        <button class="text-primary hover:text-primary-600 font-medium">Start Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Biryani -->
+                <div class="card group hover:scale-105 transition-all duration-350 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03246963d51a?q=80&w=600&auto=format&fit=crop" alt="Biryani" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-350" onerror="this.src='https://images.pixabay.com/photo/2019/01/29/18/05/biryani-3962048_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning text-white px-3 py-1 rounded-full text-sm font-medium">Advanced</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white/90 text-text-primary px-3 py-1 rounded-full text-sm font-medium">90 min</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-2">Chicken Biryani</h3>
+                    <p class="text-text-secondary mb-4">Master the art of layered rice cooking with our step-by-step game approach.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex text-secondary">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-text-secondary">(1.8k completed)</span>
+                        </div>
+                        <button class="text-primary hover:text-primary-600 font-medium">Start Recipe →</button>
+                    </div>
+                </div>
+                
+                <!-- Street Food -->
+                <div class="card group hover:scale-105 transition-all duration-350 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=600&auto=format&fit=crop" alt="Indian Street Food" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-350" onerror="this.src='https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=600'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Easy</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-white/90 text-text-primary px-3 py-1 rounded-full text-sm font-medium">30 min</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-poppins font-bold text-text-primary mb-2">Street Food Collection</h3>
+                    <p class="text-text-secondary mb-4">Pani puri, samosas, and chaat - bring the streets of India to your kitchen.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <div class="flex text-secondary">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <span class="text-sm text-text-secondary">(3.2k completed)</span>
+                        </div>
+                        <button class="text-primary hover:text-primary-600 font-medium">Start Recipe →</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="btn-primary">
+                    🍛 Explore All 500+ Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Testimonials -->
+    <section id="testimonials" class="section-padding">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Real Success Stories from Gen Z Cooks
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See how SpiceQuest transformed cooking anxiety into culinary confidence for thousands of young food enthusiasts.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=100&auto=format&fit=crop" alt="Priya Sharma" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-poppins font-bold text-text-primary">Priya Sharma</h4>
+                            <p class="text-sm text-text-secondary">College Student, Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="flex text-secondary mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-text-secondary mb-4">"I went from ordering takeout every night to cooking authentic dal makhani for my friends! The games made learning spices so fun, and now I actually understand what each ingredient does."</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">15 recipes mastered</span>
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs">30-day streak</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Alex Chen" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-poppins font-bold text-text-primary">Alex Chen</h4>
+                            <p class="text-sm text-text-secondary">Software Developer, Toronto</p>
+                        </div>
+                    </div>
+                    <div class="flex text-secondary mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-text-secondary mb-4">"As someone with zero Indian cooking experience, SpiceQuest made it accessible. The cultural stories helped me understand the 'why' behind each technique. My butter chicken is now restaurant-quality!"</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">8 recipes mastered</span>
+                        <span class="bg-secondary-100 text-secondary px-2 py-1 rounded text-xs">Spice Expert Badge</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="Maya Patel" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-poppins font-bold text-text-primary">Maya Patel</h4>
+                            <p class="text-sm text-text-secondary">Food Blogger, London</p>
+                        </div>
+                    </div>
+                    <div class="flex text-secondary mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-text-secondary mb-4">"Finally reconnected with my heritage through food! My grandmother's recipes felt impossible before, but SpiceQuest's approach made them achievable. The achievement system kept me motivated."</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-accent-100 text-accent px-2 py-1 rounded text-xs">25 recipes mastered</span>
+                        <span class="bg-primary-100 text-primary px-2 py-1 rounded text-xs">Heritage Chef</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- User Generated Content -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-poppins font-bold text-text-primary text-center mb-8">
+                    #SpiceQuestSuccess Stories
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="relative group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=400&auto=format&fit=crop" alt="User cooking success" class="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-250" onerror="this.src='https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-250 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-sm">@sarah_cooks</span>
+                        </div>
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=400&auto=format&fit=crop" alt="User cooking success" class="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-250" onerror="this.src='https://images.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_960_720.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-250 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-sm">@foodie_raj</span>
+                        </div>
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=400&auto=format&fit=crop" alt="User cooking success" class="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-250" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-250 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-sm">@spice_master</span>
+                        </div>
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=400&auto=format&fit=crop" alt="User cooking success" class="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-250" onerror="this.src='https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-250 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-sm">@kitchen_queen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamification Preview -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Level Up Your Cooking Skills
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Track your progress, earn achievements, and compete with friends in the most engaging cooking education platform.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Achievement System -->
+                <div>
+                    <h3 class="text-2xl font-poppins font-bold text-text-primary mb-6">Your Cooking Journey</h3>
+                    
+                    <!-- Progress Bar -->
+                    <div class="mb-8">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-text-secondary">Spice Master Level</span>
+                            <span class="font-poppins font-bold text-primary">Level 7</span>
+                        </div>
+                        <div class="w-full bg-surface-200 rounded-full h-4">
+                            <div class="bg-gradient-to-r from-primary to-secondary h-4 rounded-full relative" style="width: 75%">
+                                <div class="absolute right-0 top-0 h-4 w-4 bg-white rounded-full border-2 border-primary transform translate-x-2"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between text-sm text-text-secondary mt-1">
+                            <span>750 XP</span>
+                            <span>1000 XP to Level 8</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievements -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🏆</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-primary">First Recipe Master</h4>
+                                <p class="text-sm text-text-secondary">Completed your first recipe perfectly</p>
+                            </div>
+                            <div class="text-accent font-bold">+50 XP</div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm">
+                            <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                                <span class="text-white text-xl">🔥</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-primary">30-Day Streak</h4>
+                                <p class="text-sm text-text-secondary">Cooked for 30 consecutive days</p>
+                            </div>
+                            <div class="text-secondary font-bold">+200 XP</div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-sm opacity-60">
+                            <div class="w-12 h-12 bg-surface-200 rounded-full flex items-center justify-center">
+                                <span class="text-text-light text-xl">⭐</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-light">Spice Sommelier</h4>
+                                <p class="text-sm text-text-light">Master 50 different spices</p>
+                            </div>
+                            <div class="text-text-light font-bold">+500 XP</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leaderboard -->
+                <div class="card">
+                    <h3 class="text-2xl font-poppins font-bold text-text-primary mb-6 text-center">Weekly Leaderboard</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-3 bg-gradient-to-r from-accent-100 to-accent-50 rounded-lg">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">1</div>
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=100&auto=format&fit=crop" alt="Top user" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-primary">Priya S.</h4>
+                                <p class="text-sm text-text-secondary">12 recipes this week</p>
+                            </div>
+                            <div class="text-accent font-bold">2,450 XP</div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-3 bg-surface-100 rounded-lg">
+                            <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold">2</div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Second user" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-primary">Alex C.</h4>
+                                <p class="text-sm text-text-secondary">9 recipes this week</p>
+                            </div>
+                            <div class="text-secondary font-bold">1,890 XP</div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-3 bg-surface-100 rounded-lg">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">3</div>
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="Third user" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-text-primary">Maya P.</h4>
+                                <p class="text-sm text-text-secondary">8 recipes this week</p>
+                            </div>
+                            <div class="text-primary font-bold">1,650 XP</div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 p-3 bg-primary-100 rounded-lg border-2 border-primary-200">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">7</div>
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">You</div>
+                            <div class="flex-1">
+                                <h4 class="font-poppins font-bold text-primary">Your Progress</h4>
+                                <p class="text-sm text-primary-600">5 recipes this week</p>
+                            </div>
+                            <div class="text-primary font-bold">1,200 XP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Download -->
+    <section class="section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- App Preview -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-primary-100 to-secondary-100 rounded-3xl p-8 text-center">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg max-w-sm mx-auto">
+                            <div class="bg-primary rounded-xl p-4 mb-4">
+                                <div class="text-white text-center">
+                                    <div class="text-2xl mb-2">📱</div>
+                                    <div class="text-lg font-poppins font-bold">SpiceQuest</div>
+                                    <div class="text-sm opacity-90">Cook. Learn. Master.</div>
+                                </div>
+                            </div>
+                            <div class="space-y-3 text-left">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center">🎮</div>
+                                    <span class="text-sm text-text-primary">Interactive Games</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-secondary-100 rounded-full flex items-center justify-center">📹</div>
+                                    <span class="text-sm text-text-primary">Video Tutorials</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">🏆</div>
+                                    <span class="text-sm text-text-primary">Achievement System</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Download Content -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                        Take SpiceQuest Everywhere
+                    </h2>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Cook with confidence in your kitchen. Offline recipes, progress photos, and voice commands make mobile cooking seamless.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span class="text-text-primary">Offline recipe access for kitchen use</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span class="text-text-primary">Camera integration for progress photos</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span class="text-text-primary">Cross-platform progress synchronization</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+                                <span class="text-white text-xs">✓</span>
+                            </div>
+                            <span class="text-text-primary">Voice commands for hands-free cooking</span>
+                        </div>
+                    </div>
+                    
+                    <!-- QR Code and Download -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <div class="bg-white p-4 rounded-lg shadow-lg">
+                            <div class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                                <div class="text-white text-center">
+                                    <div class="text-xs mb-1">QR Code</div>
+                                    <div class="text-2xl">📱</div>
+                                </div>
+                            </div>
+                            <p class="text-xs text-text-secondary text-center mt-2">Scan to download</p>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <button class="flex items-center space-x-3 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                                <span class="text-2xl">📱</span>
+                                <div class="text-left">
+                                    <div class="text-xs opacity-75">Download on the</div>
+                                    <div class="font-bold">App Store</div>
+                                </div>
+                            </button>
+                            <button class="flex items-center space-x-3 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                                <span class="text-2xl">🤖</span>
+                                <div class="text-left">
+                                    <div class="text-xs opacity-75">Get it on</div>
+                                    <div class="font-bold">Google Play</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-surface-50">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Choose Your Cooking Journey
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Start free and upgrade when you're ready to master advanced techniques and exclusive recipes.
+                </p>
+                
+                <!-- Billing Toggle -->
+                <div class="flex items-center justify-center space-x-4 mb-8">
+                    <span class="text-text-secondary">Monthly</span>
+                    <button class="relative w-14 h-8 bg-primary rounded-full p-1 transition-colors">
+                        <div class="w-6 h-6 bg-white rounded-full shadow-sm transform translate-x-6 transition-transform"></div>
+                    </button>
+                    <span class="text-text-primary font-medium">Annual (Save 30%)</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Free Plan -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-poppins font-bold text-text-primary mb-2">Free Explorer</h3>
+                        <div class="text-4xl font-poppins font-bold text-text-primary mb-2">₹0</div>
+                        <p class="text-text-secondary">Perfect for getting started</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">10 basic recipes</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Ingredient matching games</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Basic achievement system</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Community access</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-surface-200 text-text-primary font-poppins font-semibold py-3 rounded-lg hover:bg-surface-300 transition-colors">
+                        Start Free
+                    </button>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="card border-2 border-primary relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-poppins font-bold text-text-primary mb-2">Premium Chef</h3>
+                        <div class="text-4xl font-poppins font-bold text-primary mb-2">₹299</div>
+                        <p class="text-text-secondary">per month</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">500+ premium recipes</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Advanced cooking challenges</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Video tutorials with chefs</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Offline recipe access</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Priority community support</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-primary w-full">
+                        Start Premium Trial
+                    </button>
+                </div>
+                
+                <!-- Masterclass Plan -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-poppins font-bold text-text-primary mb-2">Masterclass</h3>
+                        <div class="text-4xl font-poppins font-bold text-text-primary mb-2">₹599</div>
+                        <p class="text-text-secondary">per month</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Everything in Premium</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Live cooking sessions</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">1-on-1 chef consultations</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Exclusive regional recipes</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-accent mt-1">✓</span>
+                            <span class="text-text-secondary">Certificate of completion</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-secondary w-full">
+                        Join Masterclass
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Limited Time Offer -->
+            <div class="mt-16 text-center">
+                <div class="card bg-gradient-to-r from-warning/10 to-primary/10 border-2 border-warning/20 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-poppins font-bold text-text-primary mb-4">
+                            🪔 Limited Time: Diwali Cooking Challenge
+                        </h3>
+                        <p class="text-text-secondary mb-6">
+                            Join our special 7-day challenge and master traditional Diwali sweets. Only 50 spots remaining!
+                        </p>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="flex justify-center space-x-4 mb-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-poppins font-bold text-warning">02</div>
+                                <div class="text-xs text-text-secondary">Days</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-poppins font-bold text-warning">14</div>
+                                <div class="text-xs text-text-secondary">Hours</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-poppins font-bold text-warning">32</div>
+                                <div class="text-xs text-text-secondary">Minutes</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary">
+                            🎯 Join Challenge (₹99 only)
+                        </button>
+                        <p class="text-xs text-text-secondary mt-2">Regular price: ₹299</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="container-max">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-text-primary mb-6">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Everything you need to know about starting your Indian cooking journey with SpiceQuest.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="card">
+                    <button class="w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-lg font-poppins font-bold text-text-primary">
+                            Do I need any cooking experience to start?
+                        </h3>
+                        <span class="text-primary text-xl">+</span>
+                    </button>
+                    <div class="px-2 pb-2">
+                        <p class="text-text-secondary">
+                            Not at all! SpiceQuest is designed specifically for beginners. Our interactive games and step-by-step tutorials start with the absolute basics, teaching you everything from identifying spices to mastering cooking techniques. 95% of our users cook their first successful Indian dish within 7 days, regardless of their starting skill level.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="card">
+                    <button class="w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-lg font-poppins font-bold text-text-primary">
+                            Where can I find Indian ingredients?
+                        </h3>
+                        <span class="text-primary text-xl">+</span>
+                    </button>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="card">
+                    <button class="w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-lg font-poppins font-bold text-text-primary">
+                            How authentic are the recipes?
+                        </h3>
+                        <span class="text-primary text-xl">+</span>
+                    </button>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="card">
+                    <button class="w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-lg font-poppins font-bold text-text-primary">
+                            Can I use the app offline while cooking?
+                        </h3>
+                        <span class="text-primary text-xl">+</span>
+                    </button>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="card">
+                    <button class="w-full text-left flex items-center justify-between p-2">
+                        <h3 class="text-lg font-poppins font-bold text-text-primary">
+                            What makes SpiceQuest different from YouTube tutorials?
+                        </h3>
+                        <span class="text-primary text-xl">+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container-max text-center">
+            <h2 class="text-4xl md:text-6xl font-poppins font-bold mb-6">
+                Ready to Master Indian Cooking?
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                Join 50,000+ Gen Z cooks who transformed their kitchen confidence with SpiceQuest. Start your 7-day journey today!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <button class="bg-white text-primary font-poppins font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                    🎮 Start Free Challenge
+                </button>
+                <button class="bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 font-poppins font-semibold px-8 py-4 rounded-lg text-lg hover:bg-white/30 transition-colors">
+                    📱 Download App
+                </button>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">⭐</span>
+                    <span>4.9/5 rating (12k+ reviews)</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">🏆</span>
+                    <span>Featured by Google Play</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl">🔒</span>
+                    <span>100% satisfaction guarantee</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L20 10H28L22 16L24 24L16 20L8 24L10 16L4 10H12L16 2Z"/>
+                            <circle cx="16" cy="16" r="3" fill="white"/>
+                        </svg>
+                        <span class="text-2xl font-poppins font-bold">SpiceQuest</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Making Indian cooking accessible and fun for Gen Z through interactive learning and gamification.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">📘</a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">📷</a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">🐦</a>
+                        <a href="javascript:void(0)" class="text-gray-400 hover:text-primary transition-colors">📺</a>
+                    </div>
+                </div>
+                
+                <!-- Product -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Features</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Recipes</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Games</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Mobile App</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Community</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Chef Partners</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h4 class="font-poppins font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Press</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between">
+                <p class="text-gray-400 text-sm">
+                    © 2025 SpiceQuest. All rights reserved. Made with ❤️ for Gen Z food lovers.
+                </p>
+                <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                    <span class="text-gray-400 text-sm">🇮🇳 Proudly Indian</span>
+                    <span class="text-gray-400 text-sm">🌱 Culturally Authentic</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated counters for trust metrics
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString() + '+';
+            }, 20);
+        }
+
+        // Trigger counter animation when in view
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('[data-counter]');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.dataset.counter);
+                        animateCounter(counter, target);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // FAQ Toggle
+        document.querySelectorAll('.card button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('span:last-child');
+                
+                if (content && content.style.display !== 'block') {
+                    content.style.display = 'block';
+                    icon.textContent = '−';
+                } else if (content) {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                }
+            });
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('[data-mobile-menu]');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                const menu = document.querySelector('[data-mobile-menu-content]');
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
